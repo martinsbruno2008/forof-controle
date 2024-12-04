@@ -1,0 +1,24 @@
+<script>
+    /*
+    PROBLEMA: Investimentos
+    Joãozinho investiu R$ 1.000,00 e o investimento renderá 2% por dia útil. Quantos dias demorará para que Joãozinho consiga o total de R$ 2.000,00.
+    */
+
+    //ENTRADA
+    let investimentoInicial = 1000;
+let rendimentoDiario = 0.02;
+let meta = 2000;
+let dias = 0;
+let investimentoAtual = investimentoInicial;
+
+for (let dia of Array(365).keys()) {
+    investimentoAtual *= (1 + rendimentoDiario);
+    dias++;
+    if (investimentoAtual >= meta) {
+        break;
+    }
+}
+
+console.log(`Serão necessários ${dias} dias úteis para que Joãozinho consiga o total de R$ ${meta.toFixed(2)}.`);
+
+</script>

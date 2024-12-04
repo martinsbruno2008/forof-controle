@@ -1,0 +1,22 @@
+<meta charset="UTF-8">
+<script>
+    /*
+    PROBLEMA
+    Faça um programa que apresente na tela os números ímpares de 1 até 50.
+    */
+
+    //ENTRADA
+    let numeros = [];
+
+for (let i = 1; i <= 50; i++) {
+    numeros.push(i);
+}
+
+for (let numero of numeros) {
+    if (numero % 2 !== 0) {
+        console.log(numero);
+    }
+}
+document.write(numeros);
+
+</script>
